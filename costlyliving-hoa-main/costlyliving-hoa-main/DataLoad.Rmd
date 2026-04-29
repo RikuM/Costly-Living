@@ -1,0 +1,207 @@
+---
+title: "DataLoad"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(tidyverse, tidycensus, knitr, ggplot2,reshape2,dplyr)
+
+census_api_key("97a9bbf0b9b38b5f7c1f2358bad0d8cc0804d089", install = TRUE, overwrite = TRUE)
+readRenviron("~/.Renviron")
+```
+
+Loading all the chunks in this file will save the datasets used in our dashboard
+to your local .RData file, making the process of data retrieval much faster and smoother
+
+```{r Seb and Oscar Data}
+
+#Seb data download
+years <- c(2005:2019, 2021:2023)
+
+all_renter_age_groups <- c(
+  total = "B25007_012",
+  '15.to.24.years' = "B25007_013",
+  '25.to.34.years' = "B25007_014",
+  '35.to.44.years' = "B25007_015",
+  '45.to.54.years' = "B25007_016",
+  '55.to.59.years' = "B25007_017",
+  '60.to.64.years' = "B25007_018",
+  '65.to.74.years' = "B25007_019",
+  '75.to.84.years' = "B25007_020",
+  '85.years.and.over' = "B25007_021"
+)
+
+#using this to test
+get_stuff <- function(year) {
+  age_ranges <- get_acs(
+    geography = "state", 
+    variable = all_renter_age_groups,
+    year = year,
+    survey = "acs1") %>%
+    select(-one_of('GEOID','moe')) %>%
+    mutate(year = year) %>%
+    rename_at('estimate',~"Total") %>%
+    rename_at('variable',~"Age_Range")
+}
+
+renter_occupied_new <- map_df(years, get_stuff)
+
+all_owner_age_groups <- c(
+  total = "B25007_002",
+  '15.to.24.years' = "B25007_003",
+  '25.to.34.years' = "B25007_004",
+  '35.to.44.years' = "B25007_005",
+  '45.to.54.years' = "B25007_006",
+  '55.to.59.years' = "B25007_007",
+  '60.to.64.years' = "B25007_008",
+  '65.to.74.years' = "B25007_009",
+  '75.to.84.years' = "B25007_010",
+  '85.years.and.over' = "B25007_011"
+)
+
+#using this to test
+get_stuff <- function(year) {
+  age_ranges <- get_acs(
+    geography = "state", 
+    variable = all_owner_age_groups,
+    year = year,
+    survey = "acs1") %>%
+    select(-one_of('GEOID','moe')) %>%
+    mutate(year = year) %>%
+    rename_at('estimate',~"Total") %>%
+    rename_at('variable',~"Age_Range")
+}
+
+owner_occupied_new <- map_df(years, get_stuff)
+
+#Oscar Data download
+
+pop <- map_df(years, function(yr) {
+  get_acs(
+    geography = "place",
+    table = "B01003",
+    year = yr,
+    survey = "acs1",
+    cache_table = TRUE
+  ) %>%
+    rename(population = estimate) %>%
+    mutate(year = yr)
+})
+
+rent <- map_df(years, function(yr) {
+  get_acs(
+    geography = "place",
+    table = "B25070",
+    year = yr,
+    survey = "acs1",
+    cache_table = TRUE
+  ) %>%
+    mutate(year = yr)
+})
+
+rent_clean <- rent %>%
+  select(GEOID, NAME, variable, estimate, year) %>%
+  pivot_wider(names_from = variable, values_from = estimate) %>%
+  mutate(
+    total = B25070_001,
+    cost_burdened = B25070_007 + B25070_008 + B25070_009 + B25070_010,
+    severely_burdened = B25070_010,
+    pct_burdened = (cost_burdened / total) * 100,
+    pct_severe = (severely_burdened / total) * 100
+  )
+
+rent_big_cities <- rent_clean %>%
+  left_join(pop, by = c("GEOID", "NAME", "year")) %>%
+  filter(population >= 500000)
+
+```
+
+```{r connor data}
+
+loaded <- readRDS("data/Connor/final_data.rds")
+
+```
+
+```{r riku data}
+
+housing_map_data <- read.csv("data/housing_data_2005_2023.csv")
+housing_map_data$year <- as.numeric(housing_map_data$year)
+state_edu_income_data <- read.csv("data/education_earnings_acs1.csv")
+country_edu_income_data <- read.csv("data/us_edu_earnings.csv")
+
+# Sys.setenv(GITHUB_PAT = "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")
+# GIT_TOKEN <- Sys.getenv("GITHUB_PAT")
+# housing_map_data_RAW_URL <- "https://raw.githubusercontent.com/UWB-Adv-Data-Vis-2025-Autumn/costlyliving-hoa/refs/heads/main/housing_data_2005_2023.csv?token=GHSAT0AAAAAADQNS2K4AYQ7QNPZXTZGACAK2JOIVYA"
+# state_edu_income_data_RAW_URL <- "https://raw.githubusercontent.com/UWB-Adv-Data-Vis-2025-Autumn/costlyliving-hoa/refs/heads/main/education_earnings_acs1.csv?token=GHSAT0AAAAAADQK4VZOPB62VU53URUG4U5S2JM52WA"
+# country_edu_income_data_RAW_URL <- "https://raw.githubusercontent.com/UWB-Adv-Data-Vis-2025-Autumn/costlyliving-hoa/refs/heads/main/us_edu_earnings.csv?token=GHSAT0AAAAAADQK4VZP3SWKOWGGAFG3B7XU2JM7VAA"
+# GIT_TOKEN <- Sys.getenv("GITHUB_PAT")
+# 
+# # Check for token availability before attempting connection
+# if (GIT_TOKEN == "") {
+#   stop("FATAL: GITHUB_PAT environment variable not set. Cannot access private repo.")
+# }
+# # --- 2. HELPER FUNCTION TO FETCH AND READ ---
+# #' Fetches a CSV file from a private GitHub repository using a PAT.
+# #'
+# #' @param url The raw URL of the CSV file.
+# #' @param token The Personal Access Token for authentication.
+# #' @return A data frame containing the CSV data.
+# fetch_private_csv <- function(url, token) {
+#   
+#   # Use explicit namespaces to prevent 'function not found' errors
+#   response <- httr::GET(
+#     url,
+#     # Authenticate using the PAT in the Authorization header
+#     httr::add_headers(Authorization = paste("token", token))
+#   )
+#   
+#   # Check for successful HTTP status (200)
+#   if (httr::http_status(response)$category == "Success") {
+#     # Read the content directly from the response object
+#     data_content <- httr::content(response, "text", encoding = "UTF-8")
+#     # Use readr::read_csv to parse the text content into a data frame
+#     df <- readr::read_csv(data_content)
+#     message(paste("Successfully loaded:", basename(url)))
+#     return(df)
+#   } else {
+#     stop(paste("Failed to retrieve file:", basename(url),
+#                "Status:", httr::status_code(response),
+#                ". Check PAT and URL."))
+#   }
+# }
+# # 1. Housing Data
+# housing_map_data <- tryCatch({
+#   fetch_private_csv(housing_map_data_RAW_URL, GIT_TOKEN)
+# }, error = function(e) {
+#   stop(paste("Error loading housing data:", e$message))
+# })
+# housing_map_data$year <- as.numeric(housing_map_data$year)
+# # 2. State Education Data
+# state_edu_income_data <- tryCatch({
+#   fetch_private_csv(state_edu_income_data_RAW_URL, GIT_TOKEN)
+# }, error = function(e) {
+#   stop(paste("Error loading state education data:", e$message))
+# })
+# # 3. Country Education Data
+# country_edu_income_data <- tryCatch({
+#   fetch_private_csv(country_edu_income_data_RAW_URL, GIT_TOKEN)
+# }, error = function(e) {
+#   stop(paste("Error loading country education data:", e$message))
+# })
+
+
+```
+
+
+
+```{r save to rdata}
+
+# rm(pop,rent,rent_clean)
+# rm(all_owner_age_groups,all_renter_age_groups,country_edu_income_data_RAW_URL,GIT_TOKEN,housing_map_data_RAW_URL,state_edu_income_data_RAW_URL,years)
+# rm(fetch_private_csv,get_stuff)
+
+save.image(file = ".RData")
+
+```
+
