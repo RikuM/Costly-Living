@@ -1,3 +1,9 @@
+## ⚠️ Repository Notice
+
+This repository is a **public copy of an original private group repository** created for the BIS 412 Advanced Data Visualization course. The original development work, commits, and collaboration occurred in a private GitHub environment.
+
+This version is shared for portfolio and demonstration purposes only.
+
 # HOA Team Dashboard
 
 Authors: [Sebastian Thorstensen](https://github.com/Sthors7), [Riku Matsumoto](https://github.com/RikuM), [Connor McCaughan](https://github.com/connormccaughan), [Oscar Mendoza](https://github.com/oscarm-24)
