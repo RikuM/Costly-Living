@@ -1,0 +1,45 @@
+---
+title: "Notes"
+author: "Riku Matsumoto"
+date: "2025-11-06"
+output: html_document
+---
+NOTES FOR PROJECT
+
+- Overarching Variables: Income ", Rent, Housing (home ownership, home value),
+                         Poverty Rate, Unemployment Rate, 
+
+
+- Specifics: 
+  - Over Time
+    - economic downturns
+  - Age "B25007"
+  - Region -
+  - Education "B15003"
+  - Commute Time "B08303"
+  - Public Transit "B08301"
+  - Population Density "B01003"
+    - urban vs rural
+  - State > County Hover
+  - Energy?? "B25040"
+  - Year structure built "B25034"
+  - Median Mortgage vs Median Rent
+  
+  Connor: Mortgage
+  Sebastian: Age
+  Oscar: Rent burden
+  Riku: Education
+  
+  
+  
+  
+IDEAS:
+- Year slider
+- Hover over
+- grey out states with 
+- rent_to_income map top 5 states top and bottom affordability
+  
+  
+  
+  
+  

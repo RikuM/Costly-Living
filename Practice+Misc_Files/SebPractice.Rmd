@@ -1,0 +1,471 @@
+---
+title: "SebPractice"
+author: "Sebastian Thorstensen"
+output: html_document
+---
+
+Setup chunk
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(tidyverse, tidycensus, knitr, ggplot2,reshape2,dplyr)
+
+census_api_key("97a9bbf0b9b38b5f7c1f2358bad0d8cc0804d089", install = TRUE, overwrite = TRUE)
+readRenviron("~/.Renviron")
+```
+
+I used this chunk to find the datasets within tidycensus
+```{r data search, include=FALSE}
+census <- load_variables(2023, "acs1")
+
+view(census)
+```
+
+This chunk retrieves the rent burden data.
+```{r retrive data, include=FALSE}
+rb_Total <- get_acs(geography = "state",
+                    variable = "B25070_001",
+                    year = 2023,
+                    ) %>%
+  rename_at(4,~"Total") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_LT10 <- get_acs(geography = "state",
+                            variable = "B25070_002",
+                            year = 2023) %>%
+  rename_at(4,~"<10%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_10to14.9 <- get_acs(geography = "state",
+                                variable = "B25070_003",
+                                year = 2023) %>%
+  rename_at(4,~"10-14.9%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_15to19.9 <- get_acs(geography = "state",
+                       variable = "B25070_004",
+                       year = 2023) %>%
+  rename_at(4,~"15-19.9%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_20to24.9 <- get_acs(geography = "state",
+                       variable = "B25070_005",
+                       year = 2023) %>%
+  rename_at(4,~"20-24.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_25to29.9 <- get_acs(geography = "state",
+                       variable = "B25070_006",
+                       year = 2023) %>%
+  rename_at(4,~"25-29.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_30to34.9 <- get_acs(geography = "state",
+                       variable = "B25070_007",
+                       year = 2023) %>%
+  rename_at(4,~"30-34.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_35to39.9 <- get_acs(geography = "state",
+                       variable = "B25070_008",
+                       year = 2023) %>%
+  rename_at(4,~"35-39.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_40to44.9 <- get_acs(geography = "state",
+                       variable = "B25070_009",
+                       year = 2023) %>%
+  rename_at(4,~"40-44.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_45to49.9 <- get_acs(geography = "state",
+                       variable = "B25070_010",
+                       year = 2023) %>%
+  rename_at(4,~"45-49.9%%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_GT50 <- get_acs(geography = "state",
+                            variable = "B25070_011",
+                            year = 2023) %>%
+  rename_at(4,~">50%") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+rb_list = list(rb_Total ,rb_LT10, rb_10to14.9, rb_15to19.9, rb_20to24.9, rb_25to29.9,
+               rb_30to34.9, rb_35to39.9, rb_40to44.9, rb_45to49.9, rb_GT50)
+
+rent_burden <- rb_list  %>%
+  reduce(full_join, by = 'NAME') %>%
+  t()
+
+colnames(rent_burden) <- rent_burden[1,]
+rent_burden <- rent_burden[-1,]
+
+rm(rb_list, rb_Total, rb_LT10, rb_10to14.9, rb_15to19.9, rb_20to24.9, rb_25to29.9, 
+               rb_30to34.9, rb_35to39.9, rb_40to44.9, rb_45to49.9, rb_GT50)
+```
+
+This chunk retrieves renter age groups
+```{r retrieve renter age data OLD, include=FALSE}
+
+ro_Total <- get_acs(geography = "state",
+                           variable = "B25007_012",
+                           year = 2023) %>%
+  rename_at('estimate',~"Total") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_15to24 <- get_acs(geography = "state",
+                           variable = "B25007_013",
+                           year = 2023) %>%
+  rename_at('estimate',~"15.to.24.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_25to34 <- get_acs(geography = "state",
+                           variable = "B25007_014",
+                           year = 2023) %>%
+  rename_at('estimate',~"25.to.34.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_35to44 <- get_acs(geography = "state",
+                           variable = "B25007_015",
+                           year = 2023) %>%
+  rename_at('estimate',~"35.to.44.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_45to54 <- get_acs(geography = "state",
+                           variable = "B25007_016",
+                           year = 2023) %>%
+  rename_at('estimate',~"45.to.54.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_55to59 <- get_acs(geography = "state",
+                           variable = "B25007_017",
+                           year = 2023) %>%
+  rename_at('estimate',~"55.to.59.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_60to64 <- get_acs(geography = "state",
+                           variable = "B25007_018",
+                           year = 2023) %>%
+  rename_at('estimate',~"60.to.64.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_65to74 <- get_acs(geography = "state",
+                           variable = "B25007_019",
+                           year = 2023) %>%
+  rename_at('estimate',~"65.to.74.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_75to84 <- get_acs(geography = "state",
+                           variable = "B25007_020",
+                           year = 2023) %>%
+  rename_at('estimate',~"75.to.84.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro_85plus <- get_acs(geography = "state",
+                           variable = "B25007_021",
+                           year = 2023) %>%
+  rename_at('estimate',~"85.years.and.over") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+ro.list <- list(ro_Total, ro_15to24, ro_25to34, ro_35to44, ro_45to54, ro_55to59,
+                ro_60to64, ro_65to74, ro_75to84, ro_85plus)
+
+renter_occupied <- ro.list %>%
+  reduce(full_join, by = "NAME")
+
+
+# %>% t()
+
+#colnames(renter_occupied) <- renter_occupied[1,]
+#renter_occupied <- renter_occupied[-1,]
+
+rm(ro.list, ro_Total, ro_15to24, ro_25to34, ro_35to44, ro_45to54, ro_55to59,
+   ro_60to64, ro_65to74, ro_75to84, ro_85plus)
+
+```
+
+```{r retrieve owner age data OLD, include=FALSE}
+
+oo.Total <- get_acs(geography = "state",
+                    variable = "B25007_002",
+                    year = 2023) %>%
+  rename_at(4,~"Total") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.15to24 <- get_acs(geography = "state",
+                    variable = "B25007_003",
+                    year = 2023) %>%
+  rename_at(4,~"15.to.24.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.25to34 <- get_acs(geography = "state",
+                    variable = "B25007_004",
+                    year = 2023) %>%
+  rename_at(4,~"25.to.34.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.35to44 <- get_acs(geography = "state",
+                    variable = "B25007_005",
+                    year = 2023) %>%
+  rename_at(4,~"35.to.44.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.45to54 <- get_acs(geography = "state",
+                    variable = "B25007_006",
+                    year = 2023) %>%
+  rename_at(4,~"45.to.54.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.55to59 <- get_acs(geography = "state",
+                    variable = "B25007_007",
+                    year = 2023) %>%
+  rename_at(4,~"55.to.59.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.60to64 <- get_acs(geography = "state",
+                    variable = "B25007_008",
+                    year = 2023) %>%
+  rename_at(4,~"60.to.64.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.65to74 <- get_acs(geography = "state",
+                    variable = "B25007_009",
+                    year = 2023) %>%
+  rename_at(4,~"65.to.74.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.75to84 <- get_acs(geography = "state",
+                    variable = "B25007_010",
+                    year = 2023) %>%
+  rename_at(4,~"75.to.84.years") %>%
+  select(-one_of('GEOID','variable','moe'))
+
+oo.85plus <- get_acs(geography = "state",
+                    variable = "B25007_011",
+                    year = 2023) %>%
+  rename_at(4,~"85.years.and.over") %>%
+  select(-one_of('GEOID','variable','moe'))
+  
+oo.list <- list(oo.Total,oo.15to24,oo.25to34,oo.35to44,oo.45to54,oo.55to59,
+                oo.60to64,oo.65to74,oo.75to84,oo.85plus)
+
+owner_occupied <- oo.list %>%
+  reduce(full_join, by = "NAME") 
+#  %>% t()
+
+#colnames(owner_occupied) <- owner_occupied[1,]
+#owner_occupied <- owner_occupied[-1,]
+  
+rm(oo.list,oo.Total,oo.15to24,oo.25to34,oo.35to44,oo.45to54,oo.55to59,
+   oo.60to64,oo.65to74,oo.75to84,oo.85plus)
+```
+
+```{r Total Renter Ages, echo= FALSE}
+#Changed my mind, just gonna show total number of people in each age range
+
+#Need to load renter_occupied first in order for this to work properly
+renter_occupied_temp <- renter_occupied %>%
+  melt(id.vars = 'NAME', variable.name = 'Age_Range') %>% 
+  filter(Age_Range != "Total") %>%
+  group_by(Age_Range) %>%
+  summarise(value = sum(value))
+
+TotalRenterAgeGroups <- ggplot(renter_occupied_temp, aes(Age_Range,value)) +
+  geom_col(fill = "#7F55F0", color = "black") +
+  ggtitle(
+    "Total number of renters per age group", 
+    subtitle = " From *INSERT TIME FRAME HERE* *INSERT SURVERY NAME HERE*") +
+  labs(
+    x = "Age Range",
+    y = "# of People"
+  ) +
+  scale_x_discrete(labels = c("15-24","25-34","35-44","45-54","55-59","60-64","65-74","74-84","85+")) +
+  scale_y_continuous(labels = scales::label_number())
+
+print(TotalRenterAgeGroups)
+
+#rm(renter_occupied_temp)
+
+```
+
+```{r Renter V. Owner Graph, echo= FALSE}
+#Ideally will be a double sided bar graph (left side renters, right side owners, share axis)
+#If this turns out too tough, then Ill just have two bar graph side by side, faceted
+#Ideally, once implemented into shiny, will have a selection filter to filter by state
+
+rent_temp <- renter_occupied %>%
+  select(-Total) %>%
+  mutate(NAME = paste(NAME, "Renters"))
+#%>% melt(id.vars = "NAME", variable.name = "Age_Range")
+
+owner_temp <- owner_occupied  %>%
+  select(-Total) %>%
+  mutate(NAME = paste(NAME, "Owners"))
+#  melt(id.vars = "NAME", variable.name = "Age_Range")
+
+test <- merge(rent_temp,owner_temp, all = TRUE) %>%
+  melt(id.vars = 'NAME', variable.name = "Age_Range")
+#colnames(test) <- test[10,]
+#test <- test[-c(10,11),]
+  
+#ggplot(subset(rent_temp, NAME %in% "California"), aes(x = category, y = value)) +
+#  geom_col(fill = "blue")
+
+#ggplot(subset(owner_temp, NAME %in% "California"), aes(x = category, y = value)) +
+#  geom_col(fill = "red")
+
+#Once implemented into shiny, should be able to change the grepl to have any
+#of the possible states
+ggplot(subset(test, grepl("California",NAME)), aes(x=Age_Range, y= value, fill= NAME)) + 
+  geom_bar(position="dodge", stat="identity", color = "black") +
+  scale_x_discrete(labels = c("15-24","25-34","35-44","45-54","55-59","60-64","65-74","74-84","85+")) +
+  scale_y_continuous(labels = scales::label_number()) +
+  ggtitle(
+    "Total Renters V. Owners, per age group, in *INSERT THING HERE LATER TO MAKE IT SAY THE CORRECT STATE*", 
+    subtitle = " From *INSERT TIME FRAME HERE* *INSERT SURVERY NAME HERE*") +
+  labs(
+    x = "Age Range",
+    y = "# of People"
+  ) +
+  scale_fill_hue(labels = c("Owners","Renters")) +
+  theme(
+    legend.title = element_blank()
+    )
+
+rm(rent_temp,owner_temp)
+```
+
+```{r test, include=FALSE}
+
+# create a dataset
+state <- c(rep("Washington Renters" , 3) , rep("Washington Owners" , 3))
+age_range <- rep(c("15-24" , "25-34" , "35-44") , 4)
+value <- abs(rnorm(12 , 0 , 15))
+data <- data.frame(state,age_range,value)
+
+# Grouped
+ggplot(data, aes(fill=state, y=value, x=age_range)) + 
+    geom_bar(position="dodge", stat="identity")
+
+```
+
+```{r retrieve renter age NEW, include=FALSE}
+#dataframe containing the years we want to showcase 
+years <- c(2005:2019, 2021:2023)
+
+all_renter_age_groups <- c(
+  total = "B25007_012",
+  '15.to.24.years' = "B25007_013",
+  '25.to.34.years' = "B25007_014",
+  '35.to.44.years' = "B25007_015",
+  '45.to.54.years' = "B25007_016",
+  '55.to.59.years' = "B25007_017",
+  '60.to.64.years' = "B25007_018",
+  '65.to.74.years' = "B25007_019",
+  '75.to.84.years' = "B25007_020",
+  '85.years.and.over' = "B25007_021"
+)
+
+#using this to test
+get_stuff <- function(year) {
+  age_ranges <- get_acs(
+    geography = "state", 
+    variable = all_renter_age_groups,
+    year = year,
+    survey = "acs1") %>%
+    select(-one_of('GEOID','moe')) %>%
+    mutate(year = year) %>%
+    rename_at('estimate',~"Total") %>%
+    rename_at('variable',~"Age_Range")
+}
+
+renter_occupied_new <- map_df(years, get_stuff)
+```
+
+```{r retrieve owner age NEW, include=FALSE}
+years <- c(2005:2019, 2021:2023)
+
+all_owner_age_groups <- c(
+  total = "B25007_002",
+  '15.to.24.years' = "B25007_003",
+  '25.to.34.years' = "B25007_004",
+  '35.to.44.years' = "B25007_005",
+  '45.to.54.years' = "B25007_006",
+  '55.to.59.years' = "B25007_007",
+  '60.to.64.years' = "B25007_008",
+  '65.to.74.years' = "B25007_009",
+  '75.to.84.years' = "B25007_010",
+  '85.years.and.over' = "B25007_011"
+)
+
+#using this to test
+get_stuff <- function(year) {
+  age_ranges <- get_acs(
+    geography = "state", 
+    variable = all_owner_age_groups,
+    year = year,
+    survey = "acs1") %>%
+    select(-one_of('GEOID','moe')) %>%
+    mutate(year = year) %>%
+    rename_at('estimate',~"Total") %>%
+    rename_at('variable',~"Age_Range")
+}
+
+owner_occupied_new <- map_df(years, get_stuff)
+```
+
+```{r Total Renter Age NEW, echo=FALSE}
+
+renter_occupied_temp <- renter_occupied_new %>%
+  select(-NAME) %>%
+  group_by(Age_Range)  %>% 
+  filter(Age_Range != "total") %>%
+  filter(year == 2006) %>% #Will need to include thing in shiny to change this year
+  summarise(Total = sum(Total))
+
+TotalRenterAgeGroups <- ggplot(renter_occupied_temp, aes(Age_Range,Total)) +
+  geom_col(fill = "#7F55F0", color = "black") +
+  ggtitle(
+    "Total number of renters per age group", 
+    subtitle = " From *INSERT TIME FRAME HERE* *INSERT SURVERY NAME HERE*") +
+  labs(
+    x = "Age Range",
+    y = "# of People"
+  ) +
+  scale_x_discrete(labels = c("15-24","25-34","35-44","45-54","55-59","60-64","65-74","74-84","85+")) +
+  scale_y_continuous(labels = scales::label_number())
+
+print(TotalRenterAgeGroups)
+
+```
+```{r Renter vs. Owner Graph NEW, echo=FALSE}
+
+rent_temp <- renter_occupied_new %>%
+  mutate(NAME = paste(NAME, "Renters"))
+
+owner_temp <- owner_occupied_new  %>%
+  mutate(NAME = paste(NAME, "Owners"))
+
+test <- merge(rent_temp,owner_temp, all = TRUE) %>%
+  filter(Age_Range != "total") %>%
+  filter(year == 2016) #Need to update this in shiny
+
+#Once implemented into shiny, should be able to change the grepl to have any
+#of the possible states
+ggplot(subset(test, grepl("Washington",NAME)), aes(x=Age_Range, y= Total, fill= NAME)) + 
+  geom_bar(position="dodge", stat="identity", color = "black") +
+  scale_x_discrete(labels = c("15-24","25-34","35-44","45-54","55-59","60-64","65-74","74-84","85+")) +
+  scale_y_continuous(labels = scales::label_number()) +
+  ggtitle(
+    "Total Renters V. Owners, per age group, in *INSERT THING HERE LATER TO MAKE IT SAY THE CORRECT STATE*", 
+    subtitle = " From *INSERT TIME FRAME HERE* *INSERT SURVERY NAME HERE*") +
+  labs(
+    x = "Age Range",
+    y = "# of People"
+  ) +
+  scale_fill_hue(labels = c("Owners","Renters")) +
+  theme(
+    legend.title = element_blank()
+    )
+
+rm(rent_temp,owner_temp)
+```

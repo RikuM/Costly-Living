@@ -1,0 +1,937 @@
+"GEOID","NAME","year","med_incomeE","med_rentE","region_group","region_name","rent_to_income_ratio"
+1,"Alabama",2005,36879,535,4,"Southeast",0.174
+2,"Alaska",2005,56234,832,10,"Pacific Northwest",0.178
+4,"Arizona",2005,44282,717,9,"Pacific Southwest",0.194
+5,"Arkansas",2005,34999,549,6,"South Central",0.188
+6,"California",2005,53629,973,9,"Pacific Southwest",0.218
+8,"Colorado",2005,50652,757,8,"Mountain North",0.179
+9,"Connecticut",2005,60941,839,1,"New England",0.165
+10,"Delaware",2005,52499,793,3,"Mid-Atlantic",0.181
+11,"District of Columbia",2005,47221,832,3,"Mid-Atlantic",0.211
+12,"Florida",2005,42433,809,4,"Southeast",0.229
+13,"Georgia",2005,45604,709,4,"Southeast",0.187
+15,"Hawaii",2005,58112,995,9,"Pacific Southwest",0.205
+16,"Idaho",2005,41443,594,10,"Pacific Northwest",0.172
+17,"Illinois",2005,50260,734,5,"Great Lakes",0.175
+18,"Indiana",2005,43993,615,5,"Great Lakes",0.168
+19,"Iowa",2005,43609,559,7,"Central Plains",0.154
+20,"Kansas",2005,42920,588,7,"Central Plains",0.164
+21,"Kentucky",2005,37369,527,4,"Southeast",0.169
+22,"Louisiana",2005,36729,569,6,"South Central",0.186
+23,"Maine",2005,42801,623,1,"New England",0.175
+24,"Maryland",2005,61592,891,3,"Mid-Atlantic",0.174
+25,"Massachusetts",2005,57184,902,1,"New England",0.189
+26,"Michigan",2005,46039,655,5,"Great Lakes",0.171
+27,"Minnesota",2005,52024,692,5,"Great Lakes",0.16
+28,"Mississippi",2005,32938,538,4,"Southeast",0.196
+29,"Missouri",2005,41974,593,7,"Central Plains",0.17
+30,"Montana",2005,39301,552,8,"Mountain North",0.169
+31,"Nebraska",2005,43849,569,7,"Central Plains",0.156
+32,"Nevada",2005,49169,861,9,"Pacific Southwest",0.21
+33,"New Hampshire",2005,56768,854,1,"New England",0.181
+34,"New Jersey",2005,61672,935,2,"New York–New Jersey",0.182
+35,"New Mexico",2005,37492,587,6,"South Central",0.188
+36,"New York",2005,49480,841,2,"New York–New Jersey",0.204
+37,"North Carolina",2005,40729,635,4,"Southeast",0.187
+38,"North Dakota",2005,41030,479,8,"Mountain North",0.14
+39,"Ohio",2005,43493,613,5,"Great Lakes",0.169
+40,"Oklahoma",2005,37063,547,6,"South Central",0.177
+41,"Oregon",2005,42944,689,10,"Pacific Northwest",0.193
+42,"Pennsylvania",2005,44537,647,3,"Mid-Atlantic",0.174
+44,"Rhode Island",2005,51458,775,1,"New England",0.181
+45,"South Carolina",2005,39316,611,4,"Southeast",0.186
+46,"South Dakota",2005,40310,500,8,"Mountain North",0.149
+47,"Tennessee",2005,38874,583,4,"Southeast",0.18
+48,"Texas",2005,42139,671,6,"South Central",0.191
+49,"Utah",2005,47934,665,8,"Mountain North",0.166
+50,"Vermont",2005,45686,683,1,"New England",0.179
+51,"Virginia",2005,54240,812,3,"Mid-Atlantic",0.18
+53,"Washington",2005,49262,741,10,"Pacific Northwest",0.181
+54,"West Virginia",2005,33452,483,3,"Mid-Atlantic",0.173
+55,"Wisconsin",2005,47105,643,5,"Great Lakes",0.164
+56,"Wyoming",2005,46202,537,8,"Mountain North",0.139
+72,"Puerto Rico",2005,17184,380,11,"Puerto Rico",0.265
+1,"Alabama",2006,38783,573,4,"Southeast",0.177
+2,"Alaska",2006,59393,883,10,"Pacific Northwest",0.178
+4,"Arizona",2006,47265,762,9,"Pacific Southwest",0.193
+5,"Arkansas",2006,36599,566,6,"South Central",0.186
+6,"California",2006,56645,1029,9,"Pacific Southwest",0.218
+8,"Colorado",2006,52015,780,8,"Mountain North",0.18
+9,"Connecticut",2006,63422,886,1,"New England",0.168
+10,"Delaware",2006,52833,830,3,"Mid-Atlantic",0.189
+11,"District of Columbia",2006,51847,914,3,"Mid-Atlantic",0.212
+12,"Florida",2006,45495,872,4,"Southeast",0.23
+13,"Georgia",2006,46832,738,4,"Southeast",0.189
+15,"Hawaii",2006,61160,1116,9,"Pacific Southwest",0.219
+16,"Idaho",2006,42865,623,10,"Pacific Northwest",0.174
+17,"Illinois",2006,52006,761,5,"Great Lakes",0.176
+18,"Indiana",2006,45394,638,5,"Great Lakes",0.169
+19,"Iowa",2006,44491,584,7,"Central Plains",0.158
+20,"Kansas",2006,45478,609,7,"Central Plains",0.161
+21,"Kentucky",2006,39372,548,4,"Southeast",0.167
+22,"Louisiana",2006,39337,618,6,"South Central",0.189
+23,"Maine",2006,43439,636,1,"New England",0.176
+24,"Maryland",2006,65144,953,3,"Mid-Atlantic",0.176
+25,"Massachusetts",2006,59963,933,1,"New England",0.187
+26,"Michigan",2006,47182,675,5,"Great Lakes",0.172
+27,"Minnesota",2006,54023,701,5,"Great Lakes",0.156
+28,"Mississippi",2006,34473,584,4,"Southeast",0.203
+29,"Missouri",2006,42841,607,7,"Central Plains",0.17
+30,"Montana",2006,40627,571,8,"Mountain North",0.169
+31,"Nebraska",2006,45474,593,7,"Central Plains",0.156
+32,"Nevada",2006,52998,917,9,"Pacific Southwest",0.208
+33,"New Hampshire",2006,59683,861,1,"New England",0.173
+34,"New Jersey",2006,64470,974,2,"New York–New Jersey",0.181
+35,"New Mexico",2006,40629,617,6,"South Central",0.182
+36,"New York",2006,51384,875,2,"New York–New Jersey",0.204
+37,"North Carolina",2006,42625,656,4,"Southeast",0.185
+38,"North Dakota",2006,41919,497,8,"Mountain North",0.142
+39,"Ohio",2006,44532,627,5,"Great Lakes",0.169
+40,"Oklahoma",2006,38770,580,6,"South Central",0.18
+41,"Oregon",2006,46230,714,10,"Pacific Northwest",0.185
+42,"Pennsylvania",2006,46259,664,3,"Mid-Atlantic",0.172
+44,"Rhode Island",2006,51814,840,1,"New England",0.195
+45,"South Carolina",2006,41100,640,4,"Southeast",0.187
+46,"South Dakota",2006,42791,522,8,"Mountain North",0.146
+47,"Tennessee",2006,40315,613,4,"Southeast",0.182
+48,"Texas",2006,44922,711,6,"South Central",0.19
+49,"Utah",2006,51309,697,8,"Mountain North",0.163
+50,"Vermont",2006,47665,716,1,"New England",0.18
+51,"Virginia",2006,56277,846,3,"Mid-Atlantic",0.18
+53,"Washington",2006,52583,779,10,"Pacific Northwest",0.178
+54,"West Virginia",2006,35059,499,3,"Mid-Atlantic",0.171
+55,"Wisconsin",2006,48772,658,5,"Great Lakes",0.162
+56,"Wyoming",2006,47423,601,8,"Mountain North",0.152
+72,"Puerto Rico",2006,17621,395,11,"Puerto Rico",0.269
+1,"Alabama",2007,40554,601,4,"Southeast",0.178
+2,"Alaska",2007,64333,918,10,"Pacific Northwest",0.171
+4,"Arizona",2007,49889,819,9,"Pacific Southwest",0.197
+5,"Arkansas",2007,38134,573,6,"South Central",0.18
+6,"California",2007,59948,1078,9,"Pacific Southwest",0.216
+8,"Colorado",2007,55212,788,8,"Mountain North",0.171
+9,"Connecticut",2007,65967,931,1,"New England",0.169
+10,"Delaware",2007,54610,910,3,"Mid-Atlantic",0.2
+11,"District of Columbia",2007,54317,934,3,"Mid-Atlantic",0.206
+12,"Florida",2007,47804,925,4,"Southeast",0.232
+13,"Georgia",2007,49136,768,4,"Southeast",0.188
+18,"Indiana",2007,47448,638,5,"Great Lakes",0.161
+15,"Hawaii",2007,63746,1194,9,"Pacific Southwest",0.225
+16,"Idaho",2007,46253,654,10,"Pacific Northwest",0.17
+17,"Illinois",2007,54124,783,5,"Great Lakes",0.174
+19,"Iowa",2007,47292,567,7,"Central Plains",0.144
+20,"Kansas",2007,47451,623,7,"Central Plains",0.158
+21,"Kentucky",2007,40267,563,4,"Southeast",0.168
+22,"Louisiana",2007,40926,651,6,"South Central",0.191
+23,"Maine",2007,45888,650,1,"New England",0.17
+24,"Maryland",2007,68080,1000,3,"Mid-Atlantic",0.176
+25,"Massachusetts",2007,62365,946,1,"New England",0.182
+26,"Michigan",2007,47950,683,5,"Great Lakes",0.171
+27,"Minnesota",2007,55802,711,5,"Great Lakes",0.153
+28,"Mississippi",2007,36338,609,4,"Southeast",0.201
+29,"Missouri",2007,45114,618,7,"Central Plains",0.164
+30,"Montana",2007,43531,579,8,"Mountain North",0.16
+31,"Nebraska",2007,47085,614,7,"Central Plains",0.156
+32,"Nevada",2007,55062,980,9,"Pacific Southwest",0.214
+33,"New Hampshire",2007,62369,892,1,"New England",0.172
+34,"New Jersey",2007,67035,1026,2,"New York–New Jersey",0.184
+35,"New Mexico",2007,41452,637,6,"South Central",0.184
+36,"New York",2007,53514,907,2,"New York–New Jersey",0.203
+37,"North Carolina",2007,44670,678,4,"Southeast",0.182
+38,"North Dakota",2007,43753,516,8,"Mountain North",0.142
+39,"Ohio",2007,46597,643,5,"Great Lakes",0.166
+40,"Oklahoma",2007,41567,588,6,"South Central",0.17
+41,"Oregon",2007,48730,743,10,"Pacific Northwest",0.183
+42,"Pennsylvania",2007,48576,685,3,"Mid-Atlantic",0.169
+44,"Rhode Island",2007,53568,830,1,"New England",0.186
+45,"South Carolina",2007,43329,645,4,"Southeast",0.179
+46,"South Dakota",2007,43424,526,8,"Mountain North",0.145
+47,"Tennessee",2007,42367,634,4,"Southeast",0.18
+48,"Texas",2007,47548,734,6,"South Central",0.185
+49,"Utah",2007,55109,733,8,"Mountain North",0.16
+50,"Vermont",2007,49907,756,1,"New England",0.182
+51,"Virginia",2007,59562,892,3,"Mid-Atlantic",0.18
+53,"Washington",2007,55591,816,10,"Pacific Northwest",0.176
+54,"West Virginia",2007,37060,525,3,"Mid-Atlantic",0.17
+55,"Wisconsin",2007,50578,673,5,"Great Lakes",0.16
+56,"Wyoming",2007,51731,636,8,"Mountain North",0.148
+72,"Puerto Rico",2007,17741,392,11,"Puerto Rico",0.265
+1,"Alabama",2008,42666,631,4,"Southeast",0.177
+2,"Alaska",2008,68460,949,10,"Pacific Northwest",0.166
+4,"Arizona",2008,50958,866,9,"Pacific Southwest",0.204
+5,"Arkansas",2008,38815,606,6,"South Central",0.187
+6,"California",2008,61021,1135,9,"Pacific Southwest",0.223
+8,"Colorado",2008,56993,848,8,"Mountain North",0.179
+9,"Connecticut",2008,68595,970,1,"New England",0.17
+10,"Delaware",2008,57989,917,3,"Mid-Atlantic",0.19
+11,"District of Columbia",2008,57936,1011,3,"Mid-Atlantic",0.209
+12,"Florida",2008,47778,947,4,"Southeast",0.238
+13,"Georgia",2008,50861,787,4,"Southeast",0.186
+15,"Hawaii",2008,67214,1298,9,"Pacific Southwest",0.232
+16,"Idaho",2008,47576,690,10,"Pacific Northwest",0.174
+20,"Kansas",2008,50177,654,7,"Central Plains",0.156
+17,"Illinois",2008,56235,811,5,"Great Lakes",0.173
+18,"Indiana",2008,47966,670,5,"Great Lakes",0.168
+19,"Iowa",2008,48980,607,7,"Central Plains",0.149
+21,"Kentucky",2008,41538,578,4,"Southeast",0.167
+22,"Louisiana",2008,43733,698,6,"South Central",0.192
+23,"Maine",2008,46581,702,1,"New England",0.181
+24,"Maryland",2008,70545,1074,3,"Mid-Atlantic",0.183
+25,"Massachusetts",2008,65401,991,1,"New England",0.182
+26,"Michigan",2008,48591,706,5,"Great Lakes",0.174
+27,"Minnesota",2008,57288,734,5,"Great Lakes",0.154
+28,"Mississippi",2008,37790,638,4,"Southeast",0.203
+29,"Missouri",2008,46867,657,7,"Central Plains",0.168
+30,"Montana",2008,43654,631,8,"Mountain North",0.173
+31,"Nebraska",2008,49693,626,7,"Central Plains",0.151
+32,"Nevada",2008,56361,1011,9,"Pacific Southwest",0.215
+33,"New Hampshire",2008,63731,914,1,"New England",0.172
+34,"New Jersey",2008,70378,1068,2,"New York–New Jersey",0.182
+35,"New Mexico",2008,43508,668,6,"South Central",0.184
+36,"New York",2008,56033,953,2,"New York–New Jersey",0.204
+37,"North Carolina",2008,46549,694,4,"Southeast",0.179
+38,"North Dakota",2008,45685,534,8,"Mountain North",0.14
+39,"Ohio",2008,47988,667,5,"Great Lakes",0.167
+40,"Oklahoma",2008,42822,614,6,"South Central",0.172
+41,"Oregon",2008,50169,780,10,"Pacific Northwest",0.187
+42,"Pennsylvania",2008,50713,726,3,"Mid-Atlantic",0.172
+44,"Rhode Island",2008,55701,850,1,"New England",0.183
+45,"South Carolina",2008,44625,675,4,"Southeast",0.182
+46,"South Dakota",2008,46032,569,8,"Mountain North",0.148
+47,"Tennessee",2008,43614,660,4,"Southeast",0.182
+48,"Texas",2008,50043,768,6,"South Central",0.184
+49,"Utah",2008,56633,784,8,"Mountain North",0.166
+50,"Vermont",2008,52104,797,1,"New England",0.184
+51,"Virginia",2008,61233,934,3,"Mid-Atlantic",0.183
+53,"Washington",2008,58078,874,10,"Pacific Northwest",0.181
+54,"West Virginia",2008,37989,528,3,"Mid-Atlantic",0.167
+55,"Wisconsin",2008,52094,704,5,"Great Lakes",0.162
+56,"Wyoming",2008,53207,636,8,"Mountain North",0.143
+72,"Puerto Rico",2008,18401,429,11,"Puerto Rico",0.28
+1,"Alabama",2009,40489,657,4,"Southeast",0.195
+2,"Alaska",2009,66953,1007,10,"Pacific Northwest",0.18
+4,"Arizona",2009,48745,859,9,"Pacific Southwest",0.211
+5,"Arkansas",2009,37823,606,6,"South Central",0.192
+6,"California",2009,58931,1155,9,"Pacific Southwest",0.235
+8,"Colorado",2009,55430,851,8,"Mountain North",0.184
+9,"Connecticut",2009,67034,1006,1,"New England",0.18
+10,"Delaware",2009,56860,949,3,"Mid-Atlantic",0.2
+11,"District of Columbia",2009,59290,1059,3,"Mid-Atlantic",0.214
+12,"Florida",2009,44736,952,4,"Southeast",0.255
+13,"Georgia",2009,47590,800,4,"Southeast",0.202
+15,"Hawaii",2009,64098,1293,9,"Pacific Southwest",0.242
+16,"Idaho",2009,44926,694,10,"Pacific Northwest",0.185
+20,"Kansas",2009,47817,671,7,"Central Plains",0.168
+17,"Illinois",2009,53966,828,5,"Great Lakes",0.184
+18,"Indiana",2009,45424,687,5,"Great Lakes",0.181
+19,"Iowa",2009,48044,611,7,"Central Plains",0.153
+21,"Kentucky",2009,40072,613,4,"Southeast",0.184
+22,"Louisiana",2009,42492,715,6,"South Central",0.202
+23,"Maine",2009,45734,722,1,"New England",0.189
+24,"Maryland",2009,69272,1108,3,"Mid-Atlantic",0.192
+25,"Massachusetts",2009,64081,988,1,"New England",0.185
+26,"Michigan",2009,45255,716,5,"Great Lakes",0.19
+27,"Minnesota",2009,55616,757,5,"Great Lakes",0.163
+28,"Mississippi",2009,36646,644,4,"Southeast",0.211
+29,"Missouri",2009,45229,668,7,"Central Plains",0.177
+30,"Montana",2009,42322,627,8,"Mountain North",0.178
+31,"Nebraska",2009,47357,644,7,"Central Plains",0.163
+32,"Nevada",2009,53341,993,9,"Pacific Southwest",0.223
+33,"New Hampshire",2009,60567,918,1,"New England",0.182
+34,"New Jersey",2009,68342,1108,2,"New York–New Jersey",0.195
+35,"New Mexico",2009,43028,680,6,"South Central",0.19
+36,"New York",2009,54659,984,2,"New York–New Jersey",0.216
+37,"North Carolina",2009,43674,720,4,"Southeast",0.198
+38,"North Dakota",2009,47827,564,8,"Mountain North",0.142
+39,"Ohio",2009,45395,670,5,"Great Lakes",0.177
+40,"Oklahoma",2009,41664,636,6,"South Central",0.183
+41,"Oregon",2009,48457,819,10,"Pacific Northwest",0.203
+42,"Pennsylvania",2009,49520,738,3,"Mid-Atlantic",0.179
+44,"Rhode Island",2009,54119,890,1,"New England",0.197
+45,"South Carolina",2009,42442,706,4,"Southeast",0.2
+46,"South Dakota",2009,45043,562,8,"Mountain North",0.15
+47,"Tennessee",2009,41725,682,4,"Southeast",0.196
+48,"Texas",2009,48259,788,6,"South Central",0.196
+49,"Utah",2009,55117,793,8,"Mountain North",0.173
+50,"Vermont",2009,51618,829,1,"New England",0.193
+51,"Virginia",2009,59330,989,3,"Mid-Atlantic",0.2
+53,"Washington",2009,56548,911,10,"Pacific Northwest",0.193
+54,"West Virginia",2009,37435,552,3,"Mid-Atlantic",0.177
+55,"Wisconsin",2009,49993,708,5,"Great Lakes",0.17
+56,"Wyoming",2009,52664,700,8,"Mountain North",0.16
+72,"Puerto Rico",2009,18314,419,11,"Puerto Rico",0.275
+1,"Alabama",2010,40474,667,4,"Southeast",0.198
+2,"Alaska",2010,64576,981,10,"Pacific Northwest",0.182
+4,"Arizona",2010,46789,844,9,"Pacific Southwest",0.216
+5,"Arkansas",2010,38307,638,6,"South Central",0.2
+6,"California",2010,57708,1163,9,"Pacific Southwest",0.242
+8,"Colorado",2010,54046,863,8,"Mountain North",0.192
+9,"Connecticut",2010,64032,992,1,"New England",0.186
+10,"Delaware",2010,55847,952,3,"Mid-Atlantic",0.205
+11,"District of Columbia",2010,60903,1198,3,"Mid-Atlantic",0.236
+12,"Florida",2010,44409,947,4,"Southeast",0.256
+13,"Georgia",2010,46430,819,4,"Southeast",0.212
+15,"Hawaii",2010,63030,1291,9,"Pacific Southwest",0.246
+16,"Idaho",2010,43490,683,10,"Pacific Northwest",0.188
+17,"Illinois",2010,52972,848,5,"Great Lakes",0.192
+18,"Indiana",2010,44613,683,5,"Great Lakes",0.184
+19,"Iowa",2010,47961,629,7,"Central Plains",0.157
+20,"Kansas",2010,48257,682,7,"Central Plains",0.17
+21,"Kentucky",2010,40062,613,4,"Southeast",0.184
+22,"Louisiana",2010,42505,736,6,"South Central",0.208
+23,"Maine",2010,45815,707,1,"New England",0.185
+24,"Maryland",2010,68854,1131,3,"Mid-Atlantic",0.197
+25,"Massachusetts",2010,62072,1009,1,"New England",0.195
+26,"Michigan",2010,45413,730,5,"Great Lakes",0.193
+27,"Minnesota",2010,55459,764,5,"Great Lakes",0.165
+28,"Mississippi",2010,36851,672,4,"Southeast",0.219
+29,"Missouri",2010,44301,682,7,"Central Plains",0.185
+30,"Montana",2010,42666,642,8,"Mountain North",0.181
+31,"Nebraska",2010,48408,669,7,"Central Plains",0.166
+32,"Nevada",2010,51001,952,9,"Pacific Southwest",0.224
+33,"New Hampshire",2010,61042,951,1,"New England",0.187
+34,"New Jersey",2010,67681,1114,2,"New York–New Jersey",0.198
+35,"New Mexico",2010,42090,699,6,"South Central",0.199
+36,"New York",2010,54148,1020,2,"New York–New Jersey",0.226
+37,"North Carolina",2010,43326,731,4,"Southeast",0.202
+38,"North Dakota",2010,48670,583,8,"Mountain North",0.144
+39,"Ohio",2010,45090,685,5,"Great Lakes",0.182
+40,"Oklahoma",2010,42072,659,6,"South Central",0.188
+41,"Oregon",2010,46560,816,10,"Pacific Northwest",0.21
+42,"Pennsylvania",2010,49288,763,3,"Mid-Atlantic",0.186
+44,"Rhode Island",2010,52254,868,1,"New England",0.199
+45,"South Carolina",2010,42018,728,4,"Southeast",0.208
+46,"South Dakota",2010,45904,591,8,"Mountain North",0.154
+47,"Tennessee",2010,41461,697,4,"Southeast",0.202
+48,"Texas",2010,48615,801,6,"South Central",0.198
+49,"Utah",2010,54744,796,8,"Mountain North",0.174
+50,"Vermont",2010,49406,823,1,"New England",0.2
+51,"Virginia",2010,60674,1019,3,"Mid-Atlantic",0.202
+53,"Washington",2010,55631,908,10,"Pacific Northwest",0.196
+54,"West Virginia",2010,38218,571,3,"Mid-Atlantic",0.179
+55,"Wisconsin",2010,49001,715,5,"Great Lakes",0.175
+56,"Wyoming",2010,53512,693,8,"Mountain North",0.155
+72,"Puerto Rico",2010,18862,429,11,"Puerto Rico",0.273
+1,"Alabama",2011,41415,687,4,"Southeast",0.199
+2,"Alaska",2011,67825,1049,10,"Pacific Northwest",0.186
+4,"Arizona",2011,46709,850,9,"Pacific Southwest",0.218
+5,"Arkansas",2011,38758,639,6,"South Central",0.198
+6,"California",2011,57287,1174,9,"Pacific Southwest",0.246
+8,"Colorado",2011,55387,900,8,"Mountain North",0.195
+9,"Connecticut",2011,65753,1021,1,"New England",0.186
+10,"Delaware",2011,58814,960,3,"Mid-Atlantic",0.196
+11,"District of Columbia",2011,63124,1216,3,"Mid-Atlantic",0.231
+12,"Florida",2011,44299,949,4,"Southeast",0.257
+13,"Georgia",2011,46007,833,4,"Southeast",0.217
+15,"Hawaii",2011,61821,1308,9,"Pacific Southwest",0.254
+16,"Idaho",2011,43341,689,10,"Pacific Northwest",0.191
+17,"Illinois",2011,53234,859,5,"Great Lakes",0.194
+18,"Indiana",2011,46438,707,5,"Great Lakes",0.183
+19,"Iowa",2011,49427,643,7,"Central Plains",0.156
+20,"Kansas",2011,48964,709,7,"Central Plains",0.174
+21,"Kentucky",2011,41141,626,4,"Southeast",0.183
+22,"Louisiana",2011,41734,747,6,"South Central",0.215
+23,"Maine",2011,46033,747,1,"New England",0.195
+24,"Maryland",2011,70004,1153,3,"Mid-Atlantic",0.198
+25,"Massachusetts",2011,62859,1034,1,"New England",0.197
+26,"Michigan",2011,45981,739,5,"Great Lakes",0.193
+27,"Minnesota",2011,56954,787,5,"Great Lakes",0.166
+28,"Mississippi",2011,36919,689,4,"Southeast",0.224
+29,"Missouri",2011,45247,708,7,"Central Plains",0.188
+30,"Montana",2011,44222,650,8,"Mountain North",0.176
+31,"Nebraska",2011,50296,673,7,"Central Plains",0.161
+32,"Nevada",2011,48927,936,9,"Pacific Southwest",0.23
+33,"New Hampshire",2011,62647,939,1,"New England",0.18
+34,"New Jersey",2011,67458,1135,2,"New York–New Jersey",0.202
+35,"New Mexico",2011,41963,729,6,"South Central",0.208
+36,"New York",2011,55246,1058,2,"New York–New Jersey",0.23
+37,"North Carolina",2011,43916,745,4,"Southeast",0.204
+38,"North Dakota",2011,51704,626,8,"Mountain North",0.145
+39,"Ohio",2011,45749,692,5,"Great Lakes",0.182
+40,"Oklahoma",2011,43225,675,6,"South Central",0.187
+41,"Oregon",2011,46816,840,10,"Pacific Northwest",0.215
+42,"Pennsylvania",2011,50228,786,3,"Mid-Atlantic",0.188
+44,"Rhode Island",2011,53636,875,1,"New England",0.196
+45,"South Carolina",2011,42367,741,4,"Southeast",0.21
+46,"South Dakota",2011,48321,612,8,"Mountain North",0.152
+47,"Tennessee",2011,41693,715,4,"Southeast",0.206
+48,"Texas",2011,49392,813,6,"South Central",0.198
+49,"Utah",2011,55869,822,8,"Mountain North",0.177
+50,"Vermont",2011,52776,849,1,"New England",0.193
+51,"Virginia",2011,61882,1062,3,"Mid-Atlantic",0.206
+53,"Washington",2011,56835,930,10,"Pacific Northwest",0.196
+54,"West Virginia",2011,38482,599,3,"Mid-Atlantic",0.187
+55,"Wisconsin",2011,50395,739,5,"Great Lakes",0.176
+56,"Wyoming",2011,56322,759,8,"Mountain North",0.162
+72,"Puerto Rico",2011,18660,442,11,"Puerto Rico",0.284
+1,"Alabama",2012,41574,689,4,"Southeast",0.199
+2,"Alaska",2012,67712,1120,10,"Pacific Northwest",0.198
+4,"Arizona",2012,47826,888,9,"Pacific Southwest",0.223
+5,"Arkansas",2012,40112,640,6,"South Central",0.191
+6,"California",2012,58328,1200,9,"Pacific Southwest",0.247
+8,"Colorado",2012,56765,934,8,"Mountain North",0.197
+10,"Delaware",2012,58415,960,3,"Mid-Atlantic",0.197
+11,"District of Columbia",2012,66583,1235,3,"Mid-Atlantic",0.223
+9,"Connecticut",2012,67276,1019,1,"New England",0.182
+12,"Florida",2012,45040,954,4,"Southeast",0.254
+13,"Georgia",2012,47209,837,4,"Southeast",0.213
+16,"Idaho",2012,45489,702,10,"Pacific Northwest",0.185
+15,"Hawaii",2012,66259,1379,9,"Pacific Southwest",0.25
+17,"Illinois",2012,55137,868,5,"Great Lakes",0.189
+18,"Indiana",2012,46974,715,5,"Great Lakes",0.183
+19,"Iowa",2012,50957,661,7,"Central Plains",0.156
+20,"Kansas",2012,50241,711,7,"Central Plains",0.17
+21,"Kentucky",2012,41724,636,4,"Southeast",0.183
+22,"Louisiana",2012,42944,747,6,"South Central",0.209
+23,"Maine",2012,46709,744,1,"New England",0.191
+24,"Maryland",2012,71122,1170,3,"Mid-Atlantic",0.197
+25,"Massachusetts",2012,65339,1036,1,"New England",0.19
+26,"Michigan",2012,46859,748,5,"Great Lakes",0.192
+27,"Minnesota",2012,58906,813,5,"Great Lakes",0.166
+28,"Mississippi",2012,37095,666,4,"Southeast",0.215
+29,"Missouri",2012,45321,706,7,"Central Plains",0.187
+30,"Montana",2012,45076,681,8,"Mountain North",0.181
+31,"Nebraska",2012,50723,692,7,"Central Plains",0.164
+32,"Nevada",2012,49760,944,9,"Pacific Southwest",0.228
+33,"New Hampshire",2012,63280,967,1,"New England",0.183
+34,"New Jersey",2012,69667,1148,2,"New York–New Jersey",0.198
+35,"New Mexico",2012,42558,753,6,"South Central",0.212
+36,"New York",2012,56448,1079,2,"New York–New Jersey",0.229
+37,"North Carolina",2012,45150,756,4,"Southeast",0.201
+38,"North Dakota",2012,53585,644,8,"Mountain North",0.144
+39,"Ohio",2012,46829,700,5,"Great Lakes",0.179
+40,"Oklahoma",2012,44312,686,6,"South Central",0.186
+41,"Oregon",2012,49161,862,10,"Pacific Northwest",0.21
+42,"Pennsylvania",2012,51230,798,3,"Mid-Atlantic",0.187
+44,"Rhode Island",2012,54554,878,1,"New England",0.193
+45,"South Carolina",2012,43107,754,4,"Southeast",0.21
+46,"South Dakota",2012,48362,651,8,"Mountain North",0.162
+47,"Tennessee",2012,42764,730,4,"Southeast",0.205
+48,"Texas",2012,50740,831,6,"South Central",0.197
+50,"Vermont",2012,52977,860,1,"New England",0.195
+49,"Utah",2012,57049,851,8,"Mountain North",0.179
+51,"Virginia",2012,61741,1068,3,"Mid-Atlantic",0.208
+53,"Washington",2012,57573,954,10,"Pacific Northwest",0.199
+54,"West Virginia",2012,40196,607,3,"Mid-Atlantic",0.181
+55,"Wisconsin",2012,51059,743,5,"Great Lakes",0.175
+56,"Wyoming",2012,54901,742,8,"Mountain North",0.162
+72,"Puerto Rico",2012,19429,448,11,"Puerto Rico",0.277
+28,"Mississippi",2013,37963,708,4,"Southeast",0.224
+29,"Missouri",2013,46931,734,7,"Central Plains",0.188
+30,"Montana",2013,46972,690,8,"Mountain North",0.176
+31,"Nebraska",2013,51440,714,7,"Central Plains",0.167
+32,"Nevada",2013,51230,952,9,"Pacific Southwest",0.223
+33,"New Hampshire",2013,64230,995,1,"New England",0.186
+34,"New Jersey",2013,70165,1171,2,"New York–New Jersey",0.2
+35,"New Mexico",2013,43872,772,6,"South Central",0.211
+36,"New York",2013,57369,1109,2,"New York–New Jersey",0.232
+37,"North Carolina",2013,45906,778,4,"Southeast",0.203
+38,"North Dakota",2013,55759,690,8,"Mountain North",0.148
+39,"Ohio",2013,48081,709,5,"Great Lakes",0.177
+40,"Oklahoma",2013,45690,705,6,"South Central",0.185
+41,"Oregon",2013,50251,887,10,"Pacific Northwest",0.212
+42,"Pennsylvania",2013,52007,828,3,"Mid-Atlantic",0.191
+44,"Rhode Island",2013,55902,918,1,"New England",0.197
+45,"South Carolina",2013,44163,766,4,"Southeast",0.208
+46,"South Dakota",2013,48947,637,8,"Mountain North",0.156
+47,"Tennessee",2013,44297,748,4,"Southeast",0.203
+48,"Texas",2013,51704,857,6,"South Central",0.199
+50,"Vermont",2013,52578,865,1,"New England",0.197
+49,"Utah",2013,59770,881,8,"Mountain North",0.177
+51,"Virginia",2013,62666,1086,3,"Mid-Atlantic",0.208
+53,"Washington",2013,58405,989,10,"Pacific Northwest",0.203
+54,"West Virginia",2013,41253,620,3,"Mid-Atlantic",0.18
+55,"Wisconsin",2013,51467,758,5,"Great Lakes",0.177
+56,"Wyoming",2013,58752,780,8,"Mountain North",0.159
+72,"Puerto Rico",2013,19183,448,11,"Puerto Rico",0.28
+1,"Alabama",2013,42849,694,4,"Southeast",0.194
+2,"Alaska",2013,72237,1117,10,"Pacific Northwest",0.186
+4,"Arizona",2013,48510,890,9,"Pacific Southwest",0.22
+5,"Arkansas",2013,40511,659,6,"South Central",0.195
+6,"California",2013,60190,1224,9,"Pacific Southwest",0.244
+8,"Colorado",2013,58823,971,8,"Mountain North",0.198
+10,"Delaware",2013,57846,999,3,"Mid-Atlantic",0.207
+11,"District of Columbia",2013,67572,1307,3,"Mid-Atlantic",0.232
+9,"Connecticut",2013,67098,1040,1,"New England",0.186
+12,"Florida",2013,46036,972,4,"Southeast",0.253
+13,"Georgia",2013,47829,850,4,"Southeast",0.213
+16,"Idaho",2013,46783,725,10,"Pacific Northwest",0.186
+15,"Hawaii",2013,68020,1414,9,"Pacific Southwest",0.249
+17,"Illinois",2013,56210,885,5,"Great Lakes",0.189
+18,"Indiana",2013,47529,730,5,"Great Lakes",0.184
+19,"Iowa",2013,52229,679,7,"Central Plains",0.156
+20,"Kansas",2013,50972,745,7,"Central Plains",0.175
+21,"Kentucky",2013,43399,668,4,"Southeast",0.185
+22,"Louisiana",2013,44164,763,6,"South Central",0.207
+23,"Maine",2013,46974,760,1,"New England",0.194
+24,"Maryland",2013,72483,1210,3,"Mid-Atlantic",0.2
+25,"Massachusetts",2013,66768,1077,1,"New England",0.194
+26,"Michigan",2013,48273,768,5,"Great Lakes",0.191
+27,"Minnesota",2013,60702,832,5,"Great Lakes",0.164
+1,"Alabama",2014,42830,717,4,"Southeast",0.201
+2,"Alaska",2014,71583,1183,10,"Pacific Northwest",0.198
+4,"Arizona",2014,50068,916,9,"Pacific Southwest",0.22
+5,"Arkansas",2014,41262,683,6,"South Central",0.199
+6,"California",2014,61933,1268,9,"Pacific Southwest",0.246
+8,"Colorado",2014,61303,1020,8,"Mountain North",0.2
+10,"Delaware",2014,59716,1024,3,"Mid-Atlantic",0.206
+11,"District of Columbia",2014,71648,1360,3,"Mid-Atlantic",0.228
+9,"Connecticut",2014,70048,1076,1,"New England",0.184
+12,"Florida",2014,47463,1003,4,"Southeast",0.254
+13,"Georgia",2014,49321,882,4,"Southeast",0.215
+16,"Idaho",2014,47861,755,10,"Pacific Northwest",0.189
+15,"Hawaii",2014,69592,1448,9,"Pacific Southwest",0.25
+17,"Illinois",2014,57444,905,5,"Great Lakes",0.189
+18,"Indiana",2014,49446,753,5,"Great Lakes",0.183
+19,"Iowa",2014,53712,711,7,"Central Plains",0.159
+20,"Kansas",2014,52504,773,7,"Central Plains",0.177
+21,"Kentucky",2014,42958,678,4,"Southeast",0.189
+22,"Louisiana",2014,44555,801,6,"South Central",0.216
+23,"Maine",2014,49462,776,1,"New England",0.188
+24,"Maryland",2014,73971,1242,3,"Mid-Atlantic",0.201
+25,"Massachusetts",2014,69160,1107,1,"New England",0.192
+26,"Michigan",2014,49847,788,5,"Great Lakes",0.19
+27,"Minnesota",2014,61481,859,5,"Great Lakes",0.168
+28,"Mississippi",2014,39680,711,4,"Southeast",0.215
+29,"Missouri",2014,48363,754,7,"Central Plains",0.187
+30,"Montana",2014,46328,711,8,"Mountain North",0.184
+31,"Nebraska",2014,52686,742,7,"Central Plains",0.169
+32,"Nevada",2014,51450,955,9,"Pacific Southwest",0.223
+33,"New Hampshire",2014,66532,994,1,"New England",0.179
+34,"New Jersey",2014,71919,1202,2,"New York–New Jersey",0.201
+35,"New Mexico",2014,44803,777,6,"South Central",0.208
+36,"New York",2014,58878,1148,2,"New York–New Jersey",0.234
+37,"North Carolina",2014,46556,803,4,"Southeast",0.207
+38,"North Dakota",2014,59029,728,8,"Mountain North",0.148
+39,"Ohio",2014,49308,735,5,"Great Lakes",0.179
+40,"Oklahoma",2014,47529,737,6,"South Central",0.186
+41,"Oregon",2014,51075,924,10,"Pacific Northwest",0.217
+42,"Pennsylvania",2014,53234,848,3,"Mid-Atlantic",0.191
+44,"Rhode Island",2014,54891,934,1,"New England",0.204
+45,"South Carolina",2014,45238,791,4,"Southeast",0.21
+46,"South Dakota",2014,50979,647,8,"Mountain North",0.152
+47,"Tennessee",2014,44361,770,4,"Southeast",0.208
+48,"Texas",2014,53035,896,6,"South Central",0.203
+50,"Vermont",2014,54166,917,1,"New England",0.203
+49,"Utah",2014,60922,886,8,"Mountain North",0.175
+51,"Virginia",2014,64902,1116,3,"Mid-Atlantic",0.206
+53,"Washington",2014,61366,1032,10,"Pacific Northwest",0.202
+54,"West Virginia",2014,41059,656,3,"Mid-Atlantic",0.192
+55,"Wisconsin",2014,52622,782,5,"Great Lakes",0.178
+56,"Wyoming",2014,57055,792,8,"Mountain North",0.167
+72,"Puerto Rico",2014,18928,467,11,"Puerto Rico",0.296
+28,"Mississippi",2015,40593,724,4,"Southeast",0.214
+29,"Missouri",2015,50238,763,7,"Central Plains",0.182
+30,"Montana",2015,49509,763,8,"Mountain North",0.185
+31,"Nebraska",2015,54996,750,7,"Central Plains",0.164
+32,"Nevada",2015,52431,980,9,"Pacific Southwest",0.224
+33,"New Hampshire",2015,70303,1017,1,"New England",0.174
+34,"New Jersey",2015,72222,1214,2,"New York–New Jersey",0.202
+35,"New Mexico",2015,45382,783,6,"South Central",0.207
+36,"New York",2015,60850,1173,2,"New York–New Jersey",0.231
+37,"North Carolina",2015,47830,827,4,"Southeast",0.207
+38,"North Dakota",2015,60557,775,8,"Mountain North",0.154
+39,"Ohio",2015,51075,746,5,"Great Lakes",0.175
+40,"Oklahoma",2015,48568,759,6,"South Central",0.188
+41,"Oregon",2015,54148,943,10,"Pacific Northwest",0.209
+42,"Pennsylvania",2015,55702,868,3,"Mid-Atlantic",0.187
+44,"Rhode Island",2015,58073,938,1,"New England",0.194
+45,"South Carolina",2015,47238,819,4,"Southeast",0.208
+46,"South Dakota",2015,53017,675,8,"Mountain North",0.153
+47,"Tennessee",2015,47275,785,4,"Southeast",0.199
+48,"Texas",2015,55653,932,6,"South Central",0.201
+50,"Vermont",2015,56990,923,1,"New England",0.194
+49,"Utah",2015,62912,925,8,"Mountain North",0.176
+51,"Virginia",2015,66262,1144,3,"Mid-Atlantic",0.207
+53,"Washington",2015,64129,1080,10,"Pacific Northwest",0.202
+54,"West Virginia",2015,42019,675,3,"Mid-Atlantic",0.193
+55,"Wisconsin",2015,55638,792,5,"Great Lakes",0.171
+56,"Wyoming",2015,60214,815,8,"Mountain North",0.162
+72,"Puerto Rico",2015,18626,433,11,"Puerto Rico",0.279
+1,"Alabama",2015,44765,729,4,"Southeast",0.195
+2,"Alaska",2015,73355,1163,10,"Pacific Northwest",0.19
+4,"Arizona",2015,51492,933,9,"Pacific Southwest",0.217
+5,"Arkansas",2015,41995,695,6,"South Central",0.199
+6,"California",2015,64500,1311,9,"Pacific Southwest",0.244
+8,"Colorado",2015,63909,1111,8,"Mountain North",0.209
+10,"Delaware",2015,61255,1049,3,"Mid-Atlantic",0.206
+11,"District of Columbia",2015,75628,1417,3,"Mid-Atlantic",0.225
+9,"Connecticut",2015,71346,1108,1,"New England",0.186
+12,"Florida",2015,49426,1046,4,"Southeast",0.254
+13,"Georgia",2015,51244,909,4,"Southeast",0.213
+16,"Idaho",2015,48275,770,10,"Pacific Northwest",0.191
+15,"Hawaii",2015,73486,1500,9,"Pacific Southwest",0.245
+17,"Illinois",2015,59588,936,5,"Great Lakes",0.188
+18,"Indiana",2015,50532,758,5,"Great Lakes",0.18
+19,"Iowa",2015,54736,718,7,"Central Plains",0.157
+20,"Kansas",2015,53906,782,7,"Central Plains",0.174
+21,"Kentucky",2015,45215,702,4,"Southeast",0.186
+22,"Louisiana",2015,45727,800,6,"South Central",0.21
+23,"Maine",2015,51494,792,1,"New England",0.185
+24,"Maryland",2015,75847,1278,3,"Mid-Atlantic",0.202
+25,"Massachusetts",2015,70628,1164,1,"New England",0.198
+26,"Michigan",2015,51084,803,5,"Great Lakes",0.189
+27,"Minnesota",2015,63488,888,5,"Great Lakes",0.168
+28,"Mississippi",2016,41754,728,4,"Southeast",0.209
+29,"Missouri",2016,51746,771,7,"Central Plains",0.179
+30,"Montana",2016,50027,741,8,"Mountain North",0.178
+31,"Nebraska",2016,56927,769,7,"Central Plains",0.162
+32,"Nevada",2016,55180,1003,9,"Pacific Southwest",0.218
+33,"New Hampshire",2016,70936,1026,1,"New England",0.174
+34,"New Jersey",2016,76126,1244,2,"New York–New Jersey",0.196
+35,"New Mexico",2016,46748,804,6,"South Central",0.206
+36,"New York",2016,62909,1194,2,"New York–New Jersey",0.228
+37,"North Carolina",2016,50584,839,4,"Southeast",0.199
+38,"North Dakota",2016,60656,776,8,"Mountain North",0.154
+39,"Ohio",2016,52334,759,5,"Great Lakes",0.174
+40,"Oklahoma",2016,49176,744,6,"South Central",0.182
+41,"Oregon",2016,57532,1015,10,"Pacific Northwest",0.212
+42,"Pennsylvania",2016,56907,881,3,"Mid-Atlantic",0.186
+44,"Rhode Island",2016,60596,948,1,"New England",0.188
+45,"South Carolina",2016,49501,841,4,"Southeast",0.204
+46,"South Dakota",2016,54467,706,8,"Mountain North",0.156
+47,"Tennessee",2016,48547,806,4,"Southeast",0.199
+48,"Texas",2016,56565,956,6,"South Central",0.203
+50,"Vermont",2016,57677,925,1,"New England",0.192
+49,"Utah",2016,65977,954,8,"Mountain North",0.174
+51,"Virginia",2016,68114,1159,3,"Mid-Atlantic",0.204
+53,"Washington",2016,67106,1135,10,"Pacific Northwest",0.203
+54,"West Virginia",2016,43385,682,3,"Mid-Atlantic",0.189
+55,"Wisconsin",2016,56811,802,5,"Great Lakes",0.169
+56,"Wyoming",2016,59882,840,8,"Mountain North",0.168
+72,"Puerto Rico",2016,20078,463,11,"Puerto Rico",0.277
+1,"Alabama",2016,46257,743,4,"Southeast",0.193
+2,"Alaska",2016,76440,1208,10,"Pacific Northwest",0.19
+4,"Arizona",2016,53558,976,9,"Pacific Southwest",0.219
+5,"Arkansas",2016,44334,701,6,"South Central",0.19
+6,"California",2016,67739,1375,9,"Pacific Southwest",0.244
+8,"Colorado",2016,65685,1171,8,"Mountain North",0.214
+10,"Delaware",2016,61757,1048,3,"Mid-Atlantic",0.204
+11,"District of Columbia",2016,75506,1376,3,"Mid-Atlantic",0.219
+9,"Connecticut",2016,73433,1115,1,"New England",0.182
+12,"Florida",2016,50860,1086,4,"Southeast",0.256
+13,"Georgia",2016,53559,933,4,"Southeast",0.209
+16,"Idaho",2016,51807,790,10,"Pacific Northwest",0.183
+15,"Hawaii",2016,74511,1483,9,"Pacific Southwest",0.239
+17,"Illinois",2016,60960,950,5,"Great Lakes",0.187
+18,"Indiana",2016,52314,768,5,"Great Lakes",0.176
+19,"Iowa",2016,56247,741,7,"Central Plains",0.158
+20,"Kansas",2016,54935,789,7,"Central Plains",0.172
+21,"Kentucky",2016,46659,707,4,"Southeast",0.182
+22,"Louisiana",2016,45146,808,6,"South Central",0.215
+23,"Maine",2016,53079,797,1,"New England",0.18
+24,"Maryland",2016,78945,1314,3,"Mid-Atlantic",0.2
+25,"Massachusetts",2016,75297,1179,1,"New England",0.188
+26,"Michigan",2016,52492,818,5,"Great Lakes",0.187
+27,"Minnesota",2016,65599,912,5,"Great Lakes",0.167
+28,"Mississippi",2017,43529,742,4,"Southeast",0.205
+29,"Missouri",2017,53578,800,7,"Central Plains",0.179
+30,"Montana",2017,53386,759,8,"Mountain North",0.171
+31,"Nebraska",2017,59970,801,7,"Central Plains",0.16
+32,"Nevada",2017,58003,1051,9,"Pacific Southwest",0.217
+33,"New Hampshire",2017,73381,1072,1,"New England",0.175
+34,"New Jersey",2017,80088,1284,2,"New York–New Jersey",0.192
+35,"New Mexico",2017,46744,813,6,"South Central",0.209
+36,"New York",2017,64894,1226,2,"New York–New Jersey",0.227
+37,"North Carolina",2017,52752,861,4,"Southeast",0.196
+38,"North Dakota",2017,61843,785,8,"Mountain North",0.152
+39,"Ohio",2017,54021,772,5,"Great Lakes",0.171
+40,"Oklahoma",2017,50051,780,6,"South Central",0.187
+41,"Oregon",2017,60212,1079,10,"Pacific Northwest",0.215
+42,"Pennsylvania",2017,59195,893,3,"Mid-Atlantic",0.181
+44,"Rhode Island",2017,63870,941,1,"New England",0.177
+45,"South Carolina",2017,50570,848,4,"Southeast",0.201
+46,"South Dakota",2017,56521,722,8,"Mountain North",0.153
+47,"Tennessee",2017,51340,833,4,"Southeast",0.195
+48,"Texas",2017,59206,987,6,"South Central",0.2
+50,"Vermont",2017,57513,950,1,"New England",0.198
+49,"Utah",2017,68358,986,8,"Mountain North",0.173
+51,"Virginia",2017,71535,1179,3,"Mid-Atlantic",0.198
+53,"Washington",2017,70979,1216,10,"Pacific Northwest",0.206
+54,"West Virginia",2017,43469,690,3,"Mid-Atlantic",0.19
+55,"Wisconsin",2017,59305,819,5,"Great Lakes",0.166
+56,"Wyoming",2017,60434,832,8,"Mountain North",0.165
+72,"Puerto Rico",2017,19343,453,11,"Puerto Rico",0.281
+1,"Alabama",2017,48123,750,4,"Southeast",0.187
+2,"Alaska",2017,73181,1201,10,"Pacific Northwest",0.197
+4,"Arizona",2017,56581,1020,9,"Pacific Southwest",0.216
+5,"Arkansas",2017,45869,711,6,"South Central",0.186
+6,"California",2017,71805,1447,9,"Pacific Southwest",0.242
+8,"Colorado",2017,69117,1240,8,"Mountain North",0.215
+10,"Delaware",2017,62852,1086,3,"Mid-Atlantic",0.207
+11,"District of Columbia",2017,82372,1499,3,"Mid-Atlantic",0.218
+9,"Connecticut",2017,74168,1125,1,"New England",0.182
+12,"Florida",2017,52594,1128,4,"Southeast",0.257
+13,"Georgia",2017,56183,958,4,"Southeast",0.205
+16,"Idaho",2017,52225,822,10,"Pacific Northwest",0.189
+15,"Hawaii",2017,77765,1573,9,"Pacific Southwest",0.243
+17,"Illinois",2017,62992,974,5,"Great Lakes",0.186
+18,"Indiana",2017,54181,793,5,"Great Lakes",0.176
+19,"Iowa",2017,58570,760,7,"Central Plains",0.156
+20,"Kansas",2017,56422,815,7,"Central Plains",0.173
+21,"Kentucky",2017,48375,724,4,"Southeast",0.18
+22,"Louisiana",2017,46145,836,6,"South Central",0.217
+23,"Maine",2017,56277,806,1,"New England",0.172
+24,"Maryland",2017,80776,1337,3,"Mid-Atlantic",0.199
+25,"Massachusetts",2017,77385,1208,1,"New England",0.187
+26,"Michigan",2017,54909,835,5,"Great Lakes",0.182
+27,"Minnesota",2017,68388,939,5,"Great Lakes",0.165
+1,"Alabama",2018,49861,788,4,"Southeast",0.19
+2,"Alaska",2018,74346,1177,10,"Pacific Northwest",0.19
+4,"Arizona",2018,59246,1036,9,"Pacific Southwest",0.21
+5,"Arkansas",2018,47062,731,6,"South Central",0.186
+6,"California",2018,75277,1520,9,"Pacific Southwest",0.242
+8,"Colorado",2018,71953,1289,8,"Mountain North",0.215
+10,"Delaware",2018,64805,1108,3,"Mid-Atlantic",0.205
+11,"District of Columbia",2018,85203,1516,3,"Mid-Atlantic",0.214
+9,"Connecticut",2018,76348,1171,1,"New England",0.184
+12,"Florida",2018,55462,1182,4,"Southeast",0.256
+13,"Georgia",2018,58756,1008,4,"Southeast",0.206
+16,"Idaho",2018,55583,848,10,"Pacific Northwest",0.183
+15,"Hawaii",2018,80212,1613,9,"Pacific Southwest",0.241
+17,"Illinois",2018,65030,995,5,"Great Lakes",0.184
+18,"Indiana",2018,55746,820,5,"Great Lakes",0.177
+19,"Iowa",2018,59955,777,7,"Central Plains",0.156
+20,"Kansas",2018,58218,840,7,"Central Plains",0.173
+21,"Kentucky",2018,50247,779,4,"Southeast",0.186
+22,"Louisiana",2018,47905,854,6,"South Central",0.214
+23,"Maine",2018,55602,839,1,"New England",0.181
+24,"Maryland",2018,83242,1371,3,"Mid-Atlantic",0.198
+25,"Massachusetts",2018,79835,1295,1,"New England",0.195
+26,"Michigan",2018,56697,861,5,"Great Lakes",0.182
+27,"Minnesota",2018,70315,969,5,"Great Lakes",0.165
+55,"Wisconsin",2018,60773,847,5,"Great Lakes",0.167
+56,"Wyoming",2018,61584,818,8,"Mountain North",0.159
+72,"Puerto Rico",2018,20296,484,11,"Puerto Rico",0.286
+28,"Mississippi",2018,44717,777,4,"Southeast",0.209
+29,"Missouri",2018,54478,830,7,"Central Plains",0.183
+30,"Montana",2018,55328,811,8,"Mountain North",0.176
+31,"Nebraska",2018,59566,830,7,"Central Plains",0.167
+32,"Nevada",2018,58646,1108,9,"Pacific Southwest",0.227
+33,"New Hampshire",2018,74991,1090,1,"New England",0.174
+34,"New Jersey",2018,81740,1336,2,"New York–New Jersey",0.196
+35,"New Mexico",2018,47169,830,6,"South Central",0.211
+36,"New York",2018,67844,1274,2,"New York–New Jersey",0.225
+37,"North Carolina",2018,53855,900,4,"Southeast",0.201
+38,"North Dakota",2018,63837,808,8,"Mountain North",0.152
+39,"Ohio",2018,56111,797,5,"Great Lakes",0.17
+40,"Oklahoma",2018,51924,808,6,"South Central",0.187
+41,"Oregon",2018,63426,1130,10,"Pacific Northwest",0.214
+42,"Pennsylvania",2018,60905,927,3,"Mid-Atlantic",0.183
+44,"Rhode Island",2018,64340,998,1,"New England",0.186
+45,"South Carolina",2018,52306,892,4,"Southeast",0.205
+46,"South Dakota",2018,56274,734,8,"Mountain North",0.157
+47,"Tennessee",2018,52375,861,4,"Southeast",0.197
+48,"Texas",2018,60629,1046,6,"South Central",0.207
+50,"Vermont",2018,60782,969,1,"New England",0.191
+49,"Utah",2018,71414,1043,8,"Mountain North",0.175
+51,"Virginia",2018,72577,1215,3,"Mid-Atlantic",0.201
+53,"Washington",2018,74073,1316,10,"Pacific Northwest",0.213
+54,"West Virginia",2018,44097,735,3,"Mid-Atlantic",0.2
+17,"Illinois",2019,69187,1020,5,"Great Lakes",0.177
+13,"Georgia",2019,61980,1049,4,"Southeast",0.203
+16,"Idaho",2019,60999,880,10,"Pacific Northwest",0.173
+15,"Hawaii",2019,83102,1651,9,"Pacific Southwest",0.238
+18,"Indiana",2019,57603,840,5,"Great Lakes",0.175
+19,"Iowa",2019,61691,808,7,"Central Plains",0.157
+20,"Kansas",2019,62087,862,7,"Central Plains",0.167
+21,"Kentucky",2019,52295,773,4,"Southeast",0.177
+22,"Louisiana",2019,51073,866,6,"South Central",0.203
+23,"Maine",2019,58924,870,1,"New England",0.177
+24,"Maryland",2019,86738,1401,3,"Mid-Atlantic",0.194
+25,"Massachusetts",2019,85843,1360,1,"New England",0.19
+26,"Michigan",2019,59584,888,5,"Great Lakes",0.179
+27,"Minnesota",2019,74593,1016,5,"Great Lakes",0.163
+9,"Connecticut",2019,78833,1177,1,"New England",0.179
+12,"Florida",2019,59227,1238,4,"Southeast",0.251
+1,"Alabama",2019,51734,807,4,"Southeast",0.187
+2,"Alaska",2019,75463,1201,10,"Pacific Northwest",0.191
+4,"Arizona",2019,62055,1101,9,"Pacific Southwest",0.213
+5,"Arkansas",2019,48952,742,6,"South Central",0.182
+6,"California",2019,80440,1614,9,"Pacific Southwest",0.241
+8,"Colorado",2019,77127,1369,8,"Mountain North",0.213
+10,"Delaware",2019,70176,1116,3,"Mid-Atlantic",0.191
+11,"District of Columbia",2019,92266,1603,3,"Mid-Atlantic",0.208
+28,"Mississippi",2019,45792,777,4,"Southeast",0.204
+29,"Missouri",2019,57409,834,7,"Central Plains",0.174
+30,"Montana",2019,57153,831,8,"Mountain North",0.174
+31,"Nebraska",2019,63229,859,7,"Central Plains",0.163
+32,"Nevada",2019,63276,1168,9,"Pacific Southwest",0.222
+33,"New Hampshire",2019,77933,1147,1,"New England",0.177
+34,"New Jersey",2019,85751,1376,2,"New York–New Jersey",0.193
+35,"New Mexico",2019,51945,847,6,"South Central",0.196
+36,"New York",2019,72108,1309,2,"New York–New Jersey",0.218
+37,"North Carolina",2019,57341,931,4,"Southeast",0.195
+38,"North Dakota",2019,64577,804,8,"Mountain North",0.149
+39,"Ohio",2019,58642,813,5,"Great Lakes",0.166
+40,"Oklahoma",2019,54449,814,6,"South Central",0.179
+41,"Oregon",2019,67058,1185,10,"Pacific Northwest",0.212
+42,"Pennsylvania",2019,63463,951,3,"Mid-Atlantic",0.18
+44,"Rhode Island",2019,71169,1043,1,"New England",0.176
+45,"South Carolina",2019,56227,922,4,"Southeast",0.197
+46,"South Dakota",2019,59533,769,8,"Mountain North",0.155
+47,"Tennessee",2019,56071,904,4,"Southeast",0.193
+48,"Texas",2019,64034,1091,6,"South Central",0.204
+50,"Vermont",2019,63001,980,1,"New England",0.187
+49,"Utah",2019,75780,1098,8,"Mountain North",0.174
+51,"Virginia",2019,76456,1254,3,"Mid-Atlantic",0.197
+53,"Washington",2019,78687,1359,10,"Pacific Northwest",0.207
+54,"West Virginia",2019,48850,727,3,"Mid-Atlantic",0.179
+55,"Wisconsin",2019,64168,867,5,"Great Lakes",0.162
+56,"Wyoming",2019,65003,822,8,"Mountain North",0.152
+72,"Puerto Rico",2019,20474,482,11,"Puerto Rico",0.283
+1,"Alabama",2021,53913,861,4,"Southeast",0.192
+72,"Puerto Rico",2021,22237,504,11,"Puerto Rico",0.272
+4,"Arizona",2021,69056,1253,9,"Pacific Southwest",0.218
+5,"Arkansas",2021,52528,820,6,"South Central",0.187
+6,"California",2021,84907,1750,9,"Pacific Southwest",0.247
+8,"Colorado",2021,82254,1491,8,"Mountain North",0.218
+9,"Connecticut",2021,83771,1277,1,"New England",0.183
+10,"Delaware",2021,71091,1208,3,"Mid-Atlantic",0.204
+11,"District of Columbia",2021,90088,1668,3,"Mid-Atlantic",0.222
+12,"Florida",2021,63062,1348,4,"Southeast",0.257
+13,"Georgia",2021,66559,1153,4,"Southeast",0.208
+15,"Hawaii",2021,84857,1774,9,"Pacific Southwest",0.251
+16,"Idaho",2021,66474,1035,10,"Pacific Northwest",0.187
+17,"Illinois",2021,72205,1106,5,"Great Lakes",0.184
+18,"Indiana",2021,62743,905,5,"Great Lakes",0.173
+19,"Iowa",2021,65600,847,7,"Central Plains",0.155
+20,"Kansas",2021,64124,904,7,"Central Plains",0.169
+21,"Kentucky",2021,55573,830,4,"Southeast",0.179
+22,"Louisiana",2021,52087,924,6,"South Central",0.213
+23,"Maine",2021,64767,945,1,"New England",0.175
+24,"Maryland",2021,90203,1473,3,"Mid-Atlantic",0.196
+25,"Massachusetts",2021,89645,1487,1,"New England",0.199
+26,"Michigan",2021,63498,969,5,"Great Lakes",0.183
+27,"Minnesota",2021,77720,1113,5,"Great Lakes",0.172
+28,"Mississippi",2021,48716,831,4,"Southeast",0.205
+29,"Missouri",2021,61847,882,7,"Central Plains",0.171
+30,"Montana",2021,63249,883,8,"Mountain North",0.168
+31,"Nebraska",2021,66817,912,7,"Central Plains",0.164
+32,"Nevada",2021,66274,1311,9,"Pacific Southwest",0.237
+33,"New Hampshire",2021,88465,1263,1,"New England",0.171
+34,"New Jersey",2021,89296,1457,2,"New York–New Jersey",0.196
+35,"New Mexico",2021,53992,906,6,"South Central",0.201
+36,"New York",2021,74314,1409,2,"New York–New Jersey",0.228
+37,"North Carolina",2021,61972,1026,4,"Southeast",0.199
+38,"North Dakota",2021,66519,839,8,"Mountain North",0.151
+39,"Ohio",2021,62262,870,5,"Great Lakes",0.168
+40,"Oklahoma",2021,55826,855,6,"South Central",0.184
+41,"Oregon",2021,71562,1282,10,"Pacific Northwest",0.215
+42,"Pennsylvania",2021,68957,1036,3,"Mid-Atlantic",0.18
+44,"Rhode Island",2021,74008,1142,1,"New England",0.185
+45,"South Carolina",2021,59318,976,4,"Southeast",0.197
+46,"South Dakota",2021,66143,830,8,"Mountain North",0.151
+47,"Tennessee",2021,59695,981,4,"Southeast",0.197
+48,"Texas",2021,66963,1167,6,"South Central",0.209
+49,"Utah",2021,79449,1208,8,"Mountain North",0.182
+50,"Vermont",2021,72431,1115,1,"New England",0.185
+51,"Virginia",2021,80963,1331,3,"Mid-Atlantic",0.197
+53,"Washington",2021,84247,1484,10,"Pacific Northwest",0.211
+54,"West Virginia",2021,51248,767,3,"Mid-Atlantic",0.18
+55,"Wisconsin",2021,67125,921,5,"Great Lakes",0.165
+56,"Wyoming",2021,65204,889,8,"Mountain North",0.164
+2,"Alaska",2021,77845,1259,10,"Pacific Northwest",0.194
+1,"Alabama",2022,59674,913,4,"Southeast",0.184
+2,"Alaska",2022,88121,1329,10,"Pacific Northwest",0.181
+4,"Arizona",2022,74568,1450,9,"Pacific Southwest",0.233
+5,"Arkansas",2022,55432,846,6,"South Central",0.183
+6,"California",2022,91551,1870,9,"Pacific Southwest",0.245
+8,"Colorado",2022,89302,1646,8,"Mountain North",0.221
+9,"Connecticut",2022,88429,1360,1,"New England",0.185
+10,"Delaware",2022,82174,1274,3,"Mid-Atlantic",0.186
+11,"District of Columbia",2022,101027,1843,3,"Mid-Atlantic",0.219
+12,"Florida",2022,69303,1525,4,"Southeast",0.264
+13,"Georgia",2022,72837,1269,4,"Southeast",0.209
+15,"Hawaii",2022,92458,1813,9,"Pacific Southwest",0.235
+16,"Idaho",2022,72785,1138,10,"Pacific Northwest",0.188
+17,"Illinois",2022,76708,1170,5,"Great Lakes",0.183
+18,"Indiana",2022,66785,972,5,"Great Lakes",0.175
+19,"Iowa",2022,69588,891,7,"Central Plains",0.154
+20,"Kansas",2022,68925,975,7,"Central Plains",0.17
+21,"Kentucky",2022,59341,891,4,"Southeast",0.18
+22,"Louisiana",2022,55416,984,6,"South Central",0.213
+23,"Maine",2022,69543,1033,1,"New England",0.178
+24,"Maryland",2022,94991,1550,3,"Mid-Atlantic",0.196
+25,"Massachusetts",2022,94488,1634,1,"New England",0.208
+26,"Michigan",2022,66986,1052,5,"Great Lakes",0.188
+27,"Minnesota",2022,82338,1200,5,"Great Lakes",0.175
+28,"Mississippi",2022,52719,873,4,"Southeast",0.199
+29,"Missouri",2022,64811,954,7,"Central Plains",0.177
+30,"Montana",2022,67631,1005,8,"Mountain North",0.178
+31,"Nebraska",2022,69597,983,7,"Central Plains",0.169
+32,"Nevada",2022,72333,1461,9,"Pacific Southwest",0.242
+33,"New Hampshire",2022,89992,1396,1,"New England",0.186
+34,"New Jersey",2022,96346,1555,2,"New York–New Jersey",0.194
+35,"New Mexico",2022,59726,955,6,"South Central",0.192
+36,"New York",2022,79557,1499,2,"New York–New Jersey",0.226
+37,"North Carolina",2022,67481,1131,4,"Southeast",0.201
+38,"North Dakota",2022,71970,863,8,"Mountain North",0.144
+39,"Ohio",2022,65720,949,5,"Great Lakes",0.173
+40,"Oklahoma",2022,59673,937,6,"South Central",0.188
+41,"Oregon",2022,75657,1370,10,"Pacific Northwest",0.217
+42,"Pennsylvania",2022,71798,1116,3,"Mid-Atlantic",0.187
+44,"Rhode Island",2022,81854,1254,1,"New England",0.184
+45,"South Carolina",2022,64115,1084,4,"Southeast",0.203
+46,"South Dakota",2022,69728,866,8,"Mountain North",0.149
+47,"Tennessee",2022,65254,1096,4,"Southeast",0.202
+48,"Texas",2022,72284,1290,6,"South Central",0.214
+49,"Utah",2022,89168,1372,8,"Mountain North",0.185
+50,"Vermont",2022,73991,1141,1,"New England",0.185
+51,"Virginia",2022,85873,1441,3,"Mid-Atlantic",0.201
+53,"Washington",2022,91306,1630,10,"Pacific Northwest",0.214
+54,"West Virginia",2022,54329,795,3,"Mid-Atlantic",0.176
+55,"Wisconsin",2022,70996,992,5,"Great Lakes",0.168
+56,"Wyoming",2022,70042,895,8,"Mountain North",0.153
+72,"Puerto Rico",2022,24112,535,11,"Puerto Rico",0.266
+1,"Alabama",2023,62212,982,4,"Southeast",0.189
+2,"Alaska",2023,86631,1373,10,"Pacific Northwest",0.19
+4,"Arizona",2023,77315,1608,9,"Pacific Southwest",0.25
+5,"Arkansas",2023,58700,933,6,"South Central",0.191
+6,"California",2023,95521,1992,9,"Pacific Southwest",0.25
+8,"Colorado",2023,92911,1771,8,"Mountain North",0.229
+9,"Connecticut",2023,91665,1463,1,"New England",0.192
+10,"Delaware",2023,81361,1358,3,"Mid-Atlantic",0.2
+11,"District of Columbia",2023,108210,1904,3,"Mid-Atlantic",0.211
+12,"Florida",2023,73311,1719,4,"Southeast",0.281
+13,"Georgia",2023,74632,1400,4,"Southeast",0.225
+15,"Hawaii",2023,95322,1940,9,"Pacific Southwest",0.244
+16,"Idaho",2023,74942,1256,10,"Pacific Northwest",0.201
+17,"Illinois",2023,80306,1238,5,"Great Lakes",0.185
+18,"Indiana",2023,69477,1044,5,"Great Lakes",0.18
+19,"Iowa",2023,71433,949,7,"Central Plains",0.159
+20,"Kansas",2023,70333,1036,7,"Central Plains",0.177
+21,"Kentucky",2023,61118,929,4,"Southeast",0.182
+22,"Louisiana",2023,58229,1020,6,"South Central",0.21
+23,"Maine",2023,73733,1189,1,"New England",0.194
+24,"Maryland",2023,98678,1651,3,"Mid-Atlantic",0.201
+25,"Massachusetts",2023,99858,1757,1,"New England",0.211
+26,"Michigan",2023,69183,1101,5,"Great Lakes",0.191
+27,"Minnesota",2023,85086,1264,5,"Great Lakes",0.178
+28,"Mississippi",2023,54203,898,4,"Southeast",0.199
+29,"Missouri",2023,68545,1019,7,"Central Plains",0.178
+30,"Montana",2023,70804,1083,8,"Mountain North",0.184
+31,"Nebraska",2023,74590,1042,7,"Central Plains",0.168
+32,"Nevada",2023,76364,1622,9,"Pacific Southwest",0.255
+33,"New Hampshire",2023,96838,1517,1,"New England",0.188
+34,"New Jersey",2023,99781,1667,2,"New York–New Jersey",0.2
+35,"New Mexico",2023,62268,1084,6,"South Central",0.209
+36,"New York",2023,82095,1561,2,"New York–New Jersey",0.228
+37,"North Carolina",2023,70804,1245,4,"Southeast",0.211
+38,"North Dakota",2023,76525,916,8,"Mountain North",0.144
+39,"Ohio",2023,67769,1014,5,"Great Lakes",0.18
+40,"Oklahoma",2023,62138,1020,6,"South Central",0.197
+41,"Oregon",2023,80160,1481,10,"Pacific Northwest",0.222
+42,"Pennsylvania",2023,73824,1197,3,"Mid-Atlantic",0.195
+44,"Rhode Island",2023,84972,1365,1,"New England",0.193
+45,"South Carolina",2023,67804,1170,4,"Southeast",0.207
+46,"South Dakota",2023,71810,921,8,"Mountain North",0.154
+47,"Tennessee",2023,67631,1214,4,"Southeast",0.215
+48,"Texas",2023,75780,1413,6,"South Central",0.224
+49,"Utah",2023,93421,1551,8,"Mountain North",0.199
+50,"Vermont",2023,81211,1202,1,"New England",0.178
+51,"Virginia",2023,89931,1567,3,"Mid-Atlantic",0.209
+53,"Washington",2023,94605,1731,10,"Pacific Northwest",0.22
+54,"West Virginia",2023,55948,850,3,"Mid-Atlantic",0.182
+55,"Wisconsin",2023,74631,1071,5,"Great Lakes",0.172
+56,"Wyoming",2023,72415,1000,8,"Mountain North",0.166
+72,"Puerto Rico",2023,25621,557,11,"Puerto Rico",0.261

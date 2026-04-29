@@ -1,0 +1,123 @@
+---
+title: "OscarPractice"
+author: "Oscar"
+date: "2025-11-10"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(tidycensus)
+library(ggplot2)
+library(scales)
+library(plotly)
+library(shiny)
+```
+
+```{r Key, include=FALSE}
+census_api_key("9def1eed51c48a9c6ebaddd0be91c491e218c7e5", install = TRUE, overwrite = TRUE)
+readRenviron("~/.Renviron")
+```
+
+```{r}
+vars <- load_variables(2022, "acs1")
+vars %>% filter(str_detect(name, "B25070"))
+
+```
+
+```{r}
+years <- c(2005:2019, 2021:2023)
+
+pop <- map_df(years, function(yr) {
+  get_acs(
+    geography = "place",
+    table = "B01003",
+    year = yr,
+    survey = "acs1",
+    cache_table = TRUE
+  ) %>%
+    rename(population = estimate) %>%
+    mutate(year = yr)
+})
+```
+
+
+```{r}
+rent <- map_df(years, function(yr) {
+  get_acs(
+    geography = "place",
+    table = "B25070",
+    year = yr,
+    survey = "acs1",
+    cache_table = TRUE
+  ) %>%
+    mutate(year = yr)
+})
+```
+
+```{r}
+rent_clean <- rent %>%
+  select(GEOID, NAME, variable, estimate, year) %>%
+  pivot_wider(names_from = variable, values_from = estimate) %>%
+  mutate(
+    total = B25070_001,
+    cost_burdened = B25070_007 + B25070_008 + B25070_009 + B25070_010,
+    severely_burdened = B25070_010,
+    pct_burdened = (cost_burdened / total) * 100,
+    pct_severe = (severely_burdened / total) * 100
+  )
+```
+
+```{r}
+rent_big_cities <- rent_clean %>%
+  left_join(pop, by = c("GEOID", "NAME", "year")) %>%
+  filter(population >= 500000)
+```
+
+```{r ui, echo=FALSE}
+cities <- unique(rent_big_cities$NAME)
+selectInput("city", "Choose a city:", choices = cities)
+plotlyOutput("rentPlot")
+```
+
+```{r server, echo=FALSE}
+output$rentPlot <- renderPlotly({
+req(input$city)
+
+df <- rent_big_cities %>% filter(NAME == input$city)
+
+p <- ggplot(df, aes(year, pct_burdened)) +
+geom_line(size = 1.2) +
+labs(
+title = paste("Rent Burden Over Time:", input$city),
+x = "Year",
+y = "% Cost-Burdened (≥ 30%)"
+)
+
+ggplotly(p)
+})
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(rent_big_cities, aes(x = year, y = NAME, fill = pct_burdened)) +
+  geom_tile(color = "white") +
+  scale_fill_viridis_c(option = "magma") +
+  labs(
+    title = "Heatmap of Rent Burden Over Time",
+    x = "Year",
+    y = "City",
+    fill = "% Burdened"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(size = 16, face = "bold")
+  )
+
+```
+
+
+
